@@ -11,12 +11,21 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+      initialRouteName='Home'
+      screenOptions={{
+        headerTintColor: 'white',
+        headerStyle: {
+          backgroundColor: '#2E0674'
+        },
+      }}>
         <Stack.Screen name="Home" component={HomeScreen}/>
+        <Stack.Screen name="Sign up" component={Signup}/>
+        <Stack.Screen name="About us" component={Aboutus}/>
         {/*<Stack.Screen name="Review" component={ReviewScreen}/>
         <Stack.Screen name="Comment" component={CommentScreen}/>
-        <Stack.Screen name="About us" component={Aboutus}/>
-        <Stack.Screen name="Sign up" component={Signup}/>*/}
+        
+        */}
       </Stack.Navigator>
     </NavigationContainer>
   );
