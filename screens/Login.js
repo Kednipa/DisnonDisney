@@ -3,7 +3,7 @@ import { MagnifyingGlassIcon } from 'react-native-heroicons/solid'
 
 
 
-const Signup = () => {
+const Login = () => {
   return (
     <ScrollView className="gap-10" style={{
       backgroundColor: '#E0DAEA',
@@ -20,5 +20,5 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default Login
 
