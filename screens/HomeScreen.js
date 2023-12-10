@@ -40,11 +40,11 @@ const HomeScreen = ({ navigation }) => {
               <View>
                 <Image source={require('./images/d3.png')} />
               </View>
-              <View className="justify-center items-center  flex-1">
-                <View className="">
+              <View className="justify-center flex-1">
+                <View className="items-center">
                   <Text className="text-purple-950 text-xl font-bold ">New Zone!</Text>
-                  <TouchableOpacity className=" bg-purple-950 rounded p-1">
-                    <Text className="text-white text-base ">Visit website</Text>
+                  <TouchableOpacity className=" bg-purple-950 rounded p-1 " onPress={()=>{navigation.push('Review')}}>
+                    <Text className="text-white text-base">Review</Text>
                   </TouchableOpacity>
                 </View>
               </View>
@@ -56,7 +56,7 @@ const HomeScreen = ({ navigation }) => {
                 <Image source={require('./images/d4.png')} />
               </View>
               <View className="justify-center flex-1">
-                <View className=" items-center">
+                <View className="items-center ">
                   <Text className="text-purple-950 text-xl font-bold ">Discover  more</Text>
                   <TouchableOpacity className=" bg-purple-950 rounded p-1" onPress={() => { navigation.push('About us') }}>
                     <Text className="text-white text-base ">About us</Text>
@@ -78,7 +78,7 @@ const HomeScreen = ({ navigation }) => {
             <View className="flex-row items-center bg-neutral-50 rounded-md p-4 space-x-2 pl-6">
               <TextInput
                 placeholder='Any tips or advice for first-time visitors'
-                placeholderTextColor={'purple'}
+                placeholderTextColor={'gray'}
                 className="flex-1 text-base mb-1 pl-1 tracking-wider " />
             </View>
               <TouchableHighlight underlayColor="none" className="items-end mt-3 mr-5  " onPress={()=>{alert('hello')}}><Text className="text-purple-950 font-bold">Post</Text></TouchableHighlight >
