@@ -3,13 +3,22 @@ import { MagnifyingGlassIcon } from 'react-native-heroicons/solid'
 
 
 
-const HomeScreen = () => {
+const Signup = () => {
   return (
-   <View>
-    <Text>Hello world</Text>
-   </View>
+    <ScrollView className="gap-10" style={{
+      backgroundColor: '#E0DAEA',
+    }}>
+
+      
+
+
+
+
+
+
+    </ScrollView>
   )
 }
 
-export default HomeScreen
+export default Signup
 
