@@ -24,7 +24,7 @@ const Login = ({ navigation }) => {
     const auth = getAuth(firebaseApp1);
     signInWithEmailAndPassword(auth, email, password).then(() => {
       console.log("login successful");
-      navigation.push('Home')
+      navigation.popToTop()
     })
       .catch(function (error) {
         console.log(error.code);
