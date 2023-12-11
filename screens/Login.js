@@ -10,41 +10,41 @@ const Login = () => {
     }}>
 
       {/*Login*/}
-       <View className='flex-1 justify-center' style={{backgroundColor: '#E0DAEA'}}>
-          <View className='items-center'>
-          <View className="px-5 my-10 ">
-            <Text className="text-xl font-bold text-purple-950 mb-3">Login</Text>
+      <View className="py-20 px-5">
+            <View className=" justify-center space-y-10 flex-column ">
+              <View className=" flex-column space-y-6">
+                <Text className="text-purple-950 text-xl font-bold ">Email</Text>
+                <View className=" bg-neutral-50 rounded-3xl space-x-2 pl-10 p-3">
+                    <TextInput
+                      placeholder='Email'
+                      placeholderTextColor={'gray'}
+                      className="flex-1 text-base mb-1 pl-1 tracking-wider " />
+                </View>
+              </View>
+
+              <View className="flex-column space-y-6 justify-center">
+                <Text className="text-purple-950 text-xl font-bold ">Password</Text>
+                <View className=" bg-neutral-50 rounded-3xl space-x-2 pl-10 p-3">
+                    <TextInput
+                      placeholder='Password'
+                      placeholderTextColor={'gray'}
+                      className="flex-1 text-base mb-1 pl-1 tracking-wider " />
+                </View>
+              <View className="items-center">
+                <TouchableOpacity className=" bg-purple-950 rounded p-1 w-12 " onPress={() => { navigation.push('Home') }}>
+                      <Text className="text-white text-base ">Login</Text>
+                </TouchableOpacity>
+              </View>
+              </View>
+            
+            </View>
           </View>
 
-          <View className='flex flex-col gap-4'>
-            <Text className="text-xl font-bold text-purple-900 mb-3">Email</Text>
-            <TextInput 
-            placeholder="Enter email address"
-            onChangeText={(text) => setEmail(text)} />
-            <Text className="text-xl font-bold text-purple-900 mb-3">Password</Text>
-            <TextInput 
-            placeholder="Enter password"
-            secureTextEntry
-            onChangeText={(text) => setPassword(text)} />
-          </View>
 
-          <View>
-          <TouchableOpacity className=" bg-purple-950 rounded p-1" onPress={() => { navigation.push('Review') }}>
-                    <Text className="text-white text-base ">Login</Text>
-          </TouchableOpacity>
-        </View>
+
+  
         
-        
-        </View>
-      </View>
-
-      
-
-
-
-
-
-
+    
     </ScrollView>
   )
 }

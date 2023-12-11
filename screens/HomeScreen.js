@@ -86,7 +86,7 @@ const HomeScreen = ({ navigation }) => {
 
           <TouchableOpacity className=" bg-purple-950 rounded p-1" onPress={() => { navigation.push('Login') }}>
                     <Text className="text-white text-base ">Login</Text>
-                  </TouchableOpacity>
+          </TouchableOpacity>
 
         </View>
       </View>
