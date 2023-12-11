@@ -84,6 +84,10 @@ const HomeScreen = ({ navigation }) => {
               <TouchableHighlight underlayColor="none" className="items-end mt-3 mr-5  " onPress={()=>{alert('hello')}}><Text className="text-purple-950 font-bold">Post</Text></TouchableHighlight >
           </View>
 
+          <TouchableOpacity className=" bg-purple-950 rounded p-1" onPress={() => { navigation.push('Login') }}>
+                    <Text className="text-white text-base ">Login</Text>
+          </TouchableOpacity>
+
         </View>
       </View>
 
