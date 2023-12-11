@@ -12,7 +12,7 @@ const ReviewScreen = ({ navigation }) => {
         <View className="mt-3 ">
           <Text className='text-2xl text-purple-950 font-semibold my-3'>Explore Disneyland!</Text>
           {/* Card Main Paris */}
-          <View className='bg-white py-5 rounded-2xl'>
+          <View className='bg-white py-5 rounded-2xl shadow-lg'>
             <View className='items-center'>
               <Image source={require('./images/d5.png')} />
             </View>
@@ -32,7 +32,7 @@ const ReviewScreen = ({ navigation }) => {
 
         <View className="flex-wrap flex-row mt-5 justify-between">
           {/* Card1 */}
-          <View className='bg-white py-5 rounded-2xl px-4'>
+          <View className='bg-white shadow-lg py-5 rounded-2xl px-4'>
             <View className='items-center'>
               <Image source={require('./images/d7.png')} />
             </View>
@@ -42,13 +42,13 @@ const ReviewScreen = ({ navigation }) => {
                 activeOpacity={0.6}
                 underlayColor="#2E0674"
                 onPress={() => alert('Pressed!')}
-                className="bg-white px-5 py-1 rounded-xl border border-purple-950 mt-2">
+                className="bg-white shadow-lg px-5 py-1 rounded-xl border border-purple-950 mt-2">
                 <Text className='text-purple-950 text-sm '>Review</Text></TouchableHighlight>
             </View>
           </View>
           
           {/* Card2 */}
-          <View className='bg-white py-5 rounded-2xl px-4'>
+          <View className='bg-white shadow-lg py-5 rounded-2xl px-4'>
             <View className='items-center'>
               <Image source={require('./images/d6.png')} />
             </View>
@@ -58,7 +58,7 @@ const ReviewScreen = ({ navigation }) => {
                 activeOpacity={0.6}
                 underlayColor="#2E0674"
                 onPress={() => alert('Pressed!')}
-                className="bg-white px-5 py-1 rounded-xl border border-purple-950 mt-2">
+                className="bg-white  shadow-lg px-5 py-1 rounded-xl border border-purple-950 mt-2">
                 <Text className='text-purple-950 text-sm '>Review</Text></TouchableHighlight>
             </View>
           </View>
