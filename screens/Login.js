@@ -13,7 +13,7 @@ const firebaseConfig = {
   measurementId: "G-H4Z152JK40"
 };
 
-initializeApp(firebaseConfig);
+const firebaseApp1 = initializeApp(firebaseConfig, "app1");
 
 const Login = ({ navigation }) => {
   const [email, setEmail] = useState(null);
@@ -21,7 +21,7 @@ const Login = ({ navigation }) => {
 
   const doLogin = () => {
     console.log(email, password);
-    const auth = getAuth();
+    const auth = getAuth(firebaseApp1);
     signInWithEmailAndPassword(auth, email, password).then(() => {
       console.log("login successful");
       navigation.push('Home')

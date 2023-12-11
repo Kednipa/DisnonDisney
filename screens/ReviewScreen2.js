@@ -15,11 +15,11 @@ const firebaseConfig = {
     measurementId: "G-4PTH0J2HZE"
 };
 
-initializeApp(firebaseConfig);
+const firebaseApp2 = initializeApp(firebaseConfig, "app2");
 
 const ReviewScreen2 = () => {
 
-    const disneyRef = ref(getDatabase(), 'Disneyland/');
+    const disneyRef = ref(getDatabase(firebaseApp2), 'Disneyland/');
     const [data, setData] = useState("");
     const _readDB = () => {
         get(disneyRef).then((snapshot) => {
