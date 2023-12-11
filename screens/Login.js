@@ -1,7 +1,7 @@
 import { View, Text, TextInput, Image, TouchableOpacity, ScrollView } from 'react-native'
 import React, { useState } from 'react';
 
-const Login = () => {
+const Login = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   return (
@@ -31,7 +31,7 @@ const Login = () => {
                       className="flex-1 text-base mb-1 pl-1 tracking-wider " />
                 </View>
               <View className="items-center">
-                <TouchableOpacity className=" bg-purple-950 rounded p-1 w-12 " onPress={() => { navigation.push('Home') }}>
+                <TouchableOpacity className=" bg-purple-950 rounded p-1 w-12 "onPress={() => {navigation.push('Home') }}>
                       <Text className="text-white text-base ">Login</Text>
                 </TouchableOpacity>
               </View>
